@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% block body %}
+{{ super() }}
+<style type="text/css">
+    .jumbotron {
+        background: #E0EAFC;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #E0EAFC, #fff);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #E0EAFC, #fff);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+</style>
+
+<div class="jumbotron">
+    <h1>About</h1>
+    <p class="lead">This app is built to make readings easier and quicker by summarizing article from
+        raw text or a list of urls.</p>
+    <p class="lead">It performs extractive and abstractive summerization (under development).</p>
+    <footer class="footer pull-right">
+        <a href="https://github.com/itzanuragsinghania" class="twitter-follow-button"
+            data-show-count="false">Follow @cursed_by_hatred</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </footer>
+</div>
+{% endblock %}
